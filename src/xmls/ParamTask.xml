@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="false" name="preExam">
+    <test name="ParametersFromXml">
+        <classes>
+            <class name="XmlDemo">
+                <methods>
+                    <include name="parametersTest"/>
+                    <parameter name="str" value="parameter from xml 1"/>
+                    <parameter name="str2" value="parameter from xml 2"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
